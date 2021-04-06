@@ -1,30 +1,24 @@
 // NPM imports
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useState } from "react";
 
 // Components/Page Imports
 import Home from "./pages/Home.jsx";
-import Search from "./pages/Search.jsx";
+import Packages from "./pages/packages";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./styles/App.css";
 
 export default function App() {
-  const [orders, setOrders] = useState([]);
   return (
     <div className="App">
       <Router>
+        <Header />
         <Switch>
-          <Route
-            path="/"
-            exact
-            render={() => <Home orders={orders} setOrders={setOrders} />}
-          />
-          <Route
-            path="/search"
-            exact
-            render={() => <Search orders={orders} />}
-          />
+          <Route path="/" exact component={Home} />
+          <Route path="/packages" exact component={Packages} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

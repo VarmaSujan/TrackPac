@@ -13,7 +13,7 @@ export default function Header() {
           </Link>
         </li>
         <li>
-          <Link to="/search">Search</Link>
+          <Link to="/packages">Packages</Link>
         </li>
       </ul>
     </div>
