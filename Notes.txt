@@ -1,0 +1,11 @@
+create header and footer in components and import into pages
+
+
+
+>>>>>> Try to use a back file if cannot load from api
+import * as data from "./orders.json";
+  if (status === 2) {
+    setTasks(data.default);
+    setStatus(3);
+  }
+  {status === 3 && <TaskPage tasks={tasks} />;}

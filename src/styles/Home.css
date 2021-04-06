@@ -1,0 +1,10 @@
+.fetching p {
+  color: #f11f36;
+  font-family: "Teko", sans-serif;
+  font-size: 36px;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}

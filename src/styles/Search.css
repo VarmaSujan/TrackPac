@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+.parcelInfo ul li {
+  display: grid;
+  justify-content: space-between;
+}
+
+.banner_search {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_banner {
+  width: 139px;
+  height: auto;
+}
+.parcelInfo {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  color: #000;
+  background-color: #c4c4c4;
+}
+
+.form {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+
+@media only screen and (min-width: 750px) {
+  .banner_search {
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form {
+    padding-top: 20px;
+  }
+}
